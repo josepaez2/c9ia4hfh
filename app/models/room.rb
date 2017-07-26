@@ -10,6 +10,7 @@
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #  image_url   :string
+# price_per_night :decimal
 
 # Todos los campos son obligatorios.
 # El campo description no debe tener más de 400 caracteres.
