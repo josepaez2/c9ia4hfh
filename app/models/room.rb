@@ -18,7 +18,7 @@
 # El campo guests debe ser un número (entero).
 
 class Room < ActiveRecord::Base
-  validates :id, :title, :description, :beds, :guests, :created_at, :updated_at, :image_url, { :presence => true }
+  validates :title, :description, :beds, :guests, :image_url, { :presence => true }
   validates :beds, :guests, numericality: { only_integer: true }
   validates :description, {:length => { maximum: 400 }}
 end
